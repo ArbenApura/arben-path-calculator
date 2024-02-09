@@ -26,7 +26,7 @@
 			{#each entity.children as child (child.id)}
 				<svelte:self bind:entity={child} bind:parent={entity} />
 			{/each}
-		{:else if entity.children.length === 1}
+		{:else if entity.children.length === 1}     
 			<svelte:self bind:entity={entity.children[0]} bind:parent={entity} />
 			<AddEntityButton bind:parent={entity} />
 		{:else}
