@@ -1,0 +1,16 @@
+{
+	"short_name": "Arben Path Finder",
+	"name": "Arben Path Finder",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "favicon.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"background_color": "#1e40af",
+	"theme_color": "#2563eb",
+	"display": "standalone",
+	"scope": "/"
+}
