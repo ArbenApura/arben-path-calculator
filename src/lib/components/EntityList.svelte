@@ -4,9 +4,11 @@
 	// IMPORTED DEP-UTILS
 	import panzoom, { type PanZoom } from 'panzoom';
 	import isMobile from 'is-mobile';
+	// IMPORTED DEP-COMPONENTS
+	import { Button } from '$lib/shadcn';
 	// IMPORTED COMPONENTS
 	import EntityContainer from './EntityContainer.svelte';
-	import { Button } from '$lib/shadcn';
+	import CalculateButton from './CalculateButton.svelte';
 
 	// -- STATES -- //
 
@@ -51,11 +53,7 @@
 	{isNavigate ? 'Navigating' : 'Navigate'}
 </Button>
 
-<!-- CALCULATE BUTTON -->
-<Button class="fixed bottom-4 right-4 z-20 flex items-center gap-2 shadow-sm">
-	<i class="ph-bold ph-play"></i>
-	Calculate
-</Button>
+<CalculateButton />
 
 <div class="fixed left-0 top-0 h-full w-full overflow-hidden">
 	<div class="panzoom flex h-full w-full justify-center p-4 
