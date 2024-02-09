@@ -54,7 +54,7 @@
 <!-- CALCULATE BUTTON -->
 <Button class="fixed bottom-4 right-4 z-20 flex items-center gap-2 shadow-sm">
 	<i class="ph-bold ph-play"></i>
-	Calulate
+	Calculate
 </Button>
 
 <div class="fixed left-0 top-0 h-full w-full overflow-hidden">
