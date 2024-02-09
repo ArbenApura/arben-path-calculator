@@ -58,7 +58,10 @@
 </Button>
 
 <div class="fixed left-0 top-0 h-full w-full overflow-hidden">
-	<div class="panzoom flex h-full w-full justify-center p-4" use:initPanzoom>
+	<div class="panzoom flex h-full w-full justify-center p-4 
+			{isNavigate ? 'cursor-move' : ""}" 
+		use:initPanzoom
+	>
 		{#each $entities as entity (entity.id)}
 			<EntityContainer bind:entity />
 		{/each}
